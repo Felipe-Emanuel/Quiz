@@ -1,0 +1,6 @@
+export function Shuffle(el: any[]): any[] {
+  return el
+    .map((value) => ({ value, random: Math.random() }))
+    .sort((obj1, obj2) => obj1.random - obj2.random)
+    .map((obj) => obj.value);
+}

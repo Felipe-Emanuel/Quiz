@@ -3,7 +3,7 @@ import { Quiz } from "@/components/Quiz";
 import { useRouter } from "next/router";
 import QuestionModel from "@/model/question";
 
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://quiz-tau-sooty.vercel.app/api";
 
 export default function Home() {
   const [idQuestions, setIdQuestions] = useState<number[]>([]);
